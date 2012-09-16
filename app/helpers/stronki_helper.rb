@@ -1,0 +1,2 @@
+module StronkiHelper
+end
