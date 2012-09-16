@@ -7,4 +7,7 @@ class StronkiController < ApplicationController
 
   def about
   end
+
+  def contact
+  end
 end

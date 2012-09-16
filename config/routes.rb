@@ -1,7 +1,14 @@
 StaticPages::Application.routes.draw do
-  get "stronki/home"
-  get "stronki/help"
-  get "stronki/about"
+  get "users/new"
+
+  root to: 'stronki#home'
+
+  match '/signup',  to: 'users#new'
+
+  match '/help',    to: 'stronki#help'
+  match '/about',   to: 'stronki#about'
+  match '/contact', to: 'stronki#contact'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
