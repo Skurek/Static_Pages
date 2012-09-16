@@ -4,4 +4,7 @@ class StronkiController < ApplicationController
 
   def help
   end
+
+  def about
+  end
 end
