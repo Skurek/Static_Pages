@@ -1,5 +1,5 @@
 StaticPages::Application.routes.draw do
-  get "users/new"
+
 
   root to: 'stronki#home'
 
@@ -9,6 +9,7 @@ StaticPages::Application.routes.draw do
   match '/about',   to: 'stronki#about'
   match '/contact', to: 'stronki#contact'
 
+  resources :users            # dawne users/get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
