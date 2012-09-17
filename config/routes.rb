@@ -4,12 +4,16 @@ StaticPages::Application.routes.draw do
   root to: 'stronki#home'
 
   match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete       #HTTP DELETE request
 
   match '/help',    to: 'stronki#help'
   match '/about',   to: 'stronki#about'
   match '/contact', to: 'stronki#contact'
 
-  resources :users            # dawne users/get
+  resources :users            # zapewnia wszystkie metody dla uzytkownikow,  URI,	Named route,	Action
+  resources :sessions, only: [:new, :create, :destroy]
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
