@@ -20,7 +20,11 @@ section {
 }
 
 textarea {
-  resize: vertical;
+
+ // resize: vertical;
+  //rows: 3;
+  height: 150px;
+  width: 400px;
 }
 
 .center {
@@ -150,12 +154,13 @@ aside {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+input,  select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   padding: 10px;
   height: auto !important;
   margin-bottom: 15px;
+
 
 }
 

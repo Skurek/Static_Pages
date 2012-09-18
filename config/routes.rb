@@ -14,6 +14,8 @@ StaticPages::Application.routes.draw do
   resources :users            # zapewnia wszystkie metody dla uzytkownikow,  URI,	Named route,	Action
   resources :sessions, only: [:new, :create, :destroy]
 
+  resources :posts
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

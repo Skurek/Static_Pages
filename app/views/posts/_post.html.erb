@@ -1,0 +1,5 @@
+<%= content_tag_for(:li, post) do %>
+    <%= post.body %>
+    (<%= link_to 'Skasuj', post, :confirm => 'Jestes pewien?',
+                 :method => :delete, :remote => true %>)
+<% end %>

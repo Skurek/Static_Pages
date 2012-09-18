@@ -1,4 +1,5 @@
 <% provide(:title, 'All users') %>
+<% if signed_in? %>
 <h1>All users</h1>
 
 <ul class="users">
@@ -9,3 +10,6 @@
       </li>
   <% end %>
 </ul>
+<% else %>
+   <h2>Zaloguj się aby zobaczyć listę użytkowników!</h2>
+<% end %>
